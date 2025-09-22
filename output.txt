@@ -1,0 +1,1249 @@
+[
+  {
+    "response": [
+      {
+        "p": [
+          {
+            "#text": "Your PDF is ready. Please download the attached document."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "artifact": [
+      {
+        "html": [
+          {
+            "head": [
+              {
+                "meta": [],
+                ":@": {
+                  "@_charset": "utf-8"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "#text": "Learn Blockchain as a Beginner — Study Guide"
+                  }
+                ]
+              },
+              {
+                "style": [
+                  {
+                    "#text": "@page {\n        margin: 24mm 20mm;\n      }\n      body {\n        font-family: \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n        color: #1a1a1a;\n        line-height: 1.5;\n        font-size: 11pt;\n      }\n      h1, h2, h3, h4 {\n        color: #0b3d91;\n        margin: 0.4em 0 0.2em 0;\n        page-break-after: avoid;\n      }\n      h1 { font-size: 24pt; }\n      h2 { font-size: 18pt; }\n      h3 { font-size: 14pt; }\n      h4 { font-size: 12.5pt; }\n      ul { margin: 0.2em 0 0.6em 1.2em; }\n      li { margin: 0.2em 0; }\n      .muted { color: #666; }\n      .page-break { page-break-before: always; }\n      .cover {\n        text-align: center;\n        margin-top: 25%;\n      }\n      .meta {\n        margin-top: 1em;\n        color: #555;\n        font-size: 10pt;\n      }\n      .box {\n        border: 1px solid #e0e0e0;\n        border-left: 4px solid #0b3d91;\n        padding: 10px 12px;\n        background: #fafbff;\n        margin: 10px 0 14px 0;\n      }\n      .checklist li::marker { content: \"▹ \"; color: #0b3d91; }\n      .small { font-size: 9.5pt; }\n      .spaced li { margin-bottom: 0.3em; }\n      .two-col {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        gap: 12px 24px;\n      }\n      .hr { height: 2px; background: #0b3d91; width: 80px; margin: 12px 0 20px 0; }"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "body": [
+              {
+                "section": [
+                  {
+                    "h1": [
+                      {
+                        "#text": "Learn Blockchain as a Beginner"
+                      }
+                    ]
+                  },
+                  {
+                    "h2": [
+                      {
+                        "#text": "Study Guide"
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "muted"
+                    }
+                  },
+                  {
+                    "div": [
+                      {
+                        "div": [
+                          {
+                            "#text": "Prepared for: Sifatul Rabbi"
+                          }
+                        ]
+                      },
+                      {
+                        "div": [
+                          {
+                            "#text": "Date: 5 September 2025"
+                          }
+                        ]
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "meta"
+                    }
+                  }
+                ],
+                ":@": {
+                  "@_class": "cover"
+                }
+              },
+              {
+                "section": [
+                  {
+                    "h2": [
+                      {
+                        "#text": "Overview"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "div": [
+                      {
+                        "strong": [
+                          {
+                            "#text": "Goal:"
+                          }
+                        ]
+                      },
+                      {
+                        "#text": "Gain a practical understanding of blockchain fundamentals and build simple decentralised applications (dApps) safely on test networks."
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "box"
+                    }
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Assumptions"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "#text": "No prior blockchain knowledge."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Basic computer literacy; some programming familiarity in JavaScript or Python is helpful."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Learning Outcomes"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "#text": "Explain blocks, hashing, consensus, wallets, and transactions."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Compare Bitcoin’s UTXO model and Ethereum’s account model."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Write, test, and deploy simple smart contracts and interact with them from a web app."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Recognise common security pitfalls and describe scaling approaches (Layer 2)."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Map real‑world use cases and basic regulatory considerations."
+                          }
+                        ]
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "spaced"
+                    }
+                  }
+                ],
+                ":@": {
+                  "@_class": "page-break"
+                }
+              },
+              {
+                "section": [
+                  {
+                    "h2": [
+                      {
+                        "#text": "Suggested Timeline (6 weeks, 5–7 hrs/week)"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 1 — Foundations"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Concepts:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "What is a blockchain, blocks, chains, hashes, immutability, nodes, networks."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Keys & Wallets:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Public/private keys, addresses, seed phrases, custody basics."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Use an online SHA‑256 tool to observe avalanche effects."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Install a wallet (e.g., MetaMask) and enable a test network."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Send a testnet transaction; inspect it in a block explorer."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Define blockchain; trace a transaction lifecycle."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 2 — Cryptography & Consensus"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Cryptography:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Hash functions, Merkle trees, digital signatures."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Consensus:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Proof of Work vs Proof of Stake; finality; BFT basics."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Verify a digital signature with a simple script/library."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Build a toy Proof‑of‑Work script to find a nonce meeting a target."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Compare PoW and PoS trade‑offs (security, energy, finality)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 3 — Bitcoin Fundamentals"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Model:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "UTXOs, inputs/outputs, change, mempool, fee markets."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Mining:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Blocks, difficulty, halving; address types (P2PKH, P2WPKH)."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Decode a real Bitcoin transaction in a block explorer."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Create and broadcast a testnet transaction using a library."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Explain UTXO vs accounts; estimate fees from mempool data."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 4 — Ethereum & Smart Contracts"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Model:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Accounts, nonce, gas, EVM, events/logs."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Solidity:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Types, functions, visibility, modifiers, events; testing philosophy."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Install Node.js LTS, Git, VS Code; set up Hardhat (or Foundry)."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Write a"
+                                  },
+                                  {
+                                    "em": [
+                                      {
+                                        "#text": "SimpleStorage"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "#text": "contract, add unit tests, run a local node, and deploy."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Interact with the contract via script and a testnet."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Describe gas and events; read/emit one from your contract."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 5 — Tokens, dApps & Front‑Ends"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Standards:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "ERC‑20 (fungible), ERC‑721 (NFT), ERC‑1155 (multi‑token)."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "dApp Architecture:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Wallets, providers, signing, backend vs on‑chain logic."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Create an ERC‑20 using OpenZeppelin; write tests; deploy to a testnet."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Build a minimal React front‑end that connects a wallet and calls contract methods."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Explain"
+                          },
+                          {
+                            "code": [
+                              {
+                                "#text": "approve"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "/"
+                          },
+                          {
+                            "code": [
+                              {
+                                "#text": "transferFrom"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "; mint and verify balances."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h3": [
+                      {
+                        "#text": "Week 6 — Security, Scaling & Use Cases"
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Security:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Re‑entrancy, access control, integer issues, front‑running; audits and tooling."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Scaling:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "L2 rollups (Optimistic, ZK), sidechains; bridges; cost/performance trade‑offs."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Use Cases:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Payments, NFTs, DeFi (AMMs, lending), DAOs; enterprise (Hyperledger, Corda)."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Write a vulnerable contract test; exploit it; implement a fix (checks‑effects‑interactions)."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Deploy a contract to an L2 testnet; compare costs and finality."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Checkpoint:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "List top 3 security risks and mitigations for your dApp."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                ":@": {
+                  "@_class": "page-break"
+                }
+              },
+              {
+                "section": [
+                  {
+                    "h2": [
+                      {
+                        "#text": "Capstone Project (1–2 weeks, optional)"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "p": [
+                      {
+                        "#text": "Choose one and deliver end‑to‑end, from smart contracts and tests to a minimal front‑end."
+                      }
+                    ]
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "#text": "Crowdfunding dApp with time‑bound refund logic if goal not met."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Simple multisig wallet (M‑of‑N approvals) with a dashboard."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "NFT minting site with metadata hosting and royalty configuration."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "p": [
+                      {
+                        "strong": [
+                          {
+                            "#text": "Deliverables:"
+                          }
+                        ]
+                      },
+                      {
+                        "#text": "Smart contracts (tests + audit notes), deployed addresses, minimal front‑end, README detailing architecture, risks, and future work."
+                      }
+                    ]
+                  },
+                  {
+                    "h2": [
+                      {
+                        "#text": "Tooling Checklist"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "System:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Git, Node.js LTS, VS Code, Docker (optional), a modern browser."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Wallets & Networks:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "MetaMask (testnets enabled), faucets for test coins."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Dev Tools:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Hardhat or Foundry (Anvil), Ethers.js, OpenZeppelin Contracts, local node."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Utilities:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Block explorers (Etherscan and testnet equivalents), ABI decoders."
+                          }
+                        ]
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "checklist"
+                    }
+                  }
+                ],
+                ":@": {
+                  "@_class": "page-break"
+                }
+              },
+              {
+                "section": [
+                  {
+                    "h2": [
+                      {
+                        "#text": "Study & Practice Habits"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "#text": "Use testnets for all experiments; never test with real funds."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Write tests for every contract—positive/negative paths and edge cases."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Read verified contracts on explorers to learn patterns and pitfalls."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Keep a lab notebook: snippets, errors, fixes, gas costs, lessons learned."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "h2": [
+                      {
+                        "#text": "Self‑Assessment"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Weekly quizzes:"
+                              }
+                            ]
+                          },
+                          {
+                            "#text": "Definitions, comparisons, and “explain like I’m 12” summaries."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "strong": [
+                              {
+                                "#text": "Hands‑on rubrics:"
+                              }
+                            ]
+                          },
+                          {
+                            "ul": [
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Deploys succeed locally and on a testnet with clear scripts."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Contracts pass tests and basic static analysis (e.g., Slither or Hardhat plugins)."
+                                  }
+                                ]
+                              },
+                              {
+                                "li": [
+                                  {
+                                    "#text": "Front‑end connects/disconnects wallet, handles reverts, and shows on‑chain state."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                ":@": {
+                  "@_class": "page-break"
+                }
+              },
+              {
+                "section": [
+                  {
+                    "h2": [
+                      {
+                        "#text": "Recommended Reading"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "ul": [
+                      {
+                        "li": [
+                          {
+                            "#text": "Bitcoin Whitepaper — Satoshi Nakamoto."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Mastering Bitcoin and Mastering Ethereum — Andreas M. Antonopoulos et al."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "Ethereum and Solidity official documentation."
+                          }
+                        ]
+                      },
+                      {
+                        "li": [
+                          {
+                            "#text": "OpenZeppelin Contracts documentation and security guidelines."
+                          }
+                        ]
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "spaced"
+                    }
+                  },
+                  {
+                    "h2": [
+                      {
+                        "#text": "Glossary (Quick Reference)"
+                      }
+                    ]
+                  },
+                  {
+                    "div": [],
+                    ":@": {
+                      "@_class": "hr"
+                    }
+                  },
+                  {
+                    "div": [
+                      {
+                        "div": [
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Block:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "A batch of validated transactions linked cryptographically to the previous block."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Hash:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Fixed‑length output from a hash function; small input changes yield large output changes."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Wallet:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Software/hardware managing keys to sign transactions."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Address:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Public identifier derived from a public key for receiving assets."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "UTXO:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Unspent Transaction Output model used by Bitcoin."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "div": [
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "EVM:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Ethereum Virtual Machine that executes smart contracts."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Gas:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Fee paid to execute operations on Ethereum‑like chains."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Smart Contract:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Code deployed on a blockchain that runs deterministically."
+                              }
+                            ]
+                          },
+                          {
+                            "p": [
+                              {
+                                "strong": [
+                                  {
+                                    "#text": "Layer 2:"
+                                  }
+                                ]
+                              },
+                              {
+                                "#text": "Protocols atop a base chain to increase throughput and reduce costs."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    ":@": {
+                      "@_class": "two-col small"
+                    }
+                  }
+                ],
+                ":@": {
+                  "@_class": "page-break"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    ":@": {
+      "@_type": "pdf",
+      "@_name": "learn-blockchain-beginner-study-guide.pdf"
+    }
+  }
+]

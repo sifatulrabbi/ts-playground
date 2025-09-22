@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@langchain/core": "^0.3.75",
+    "@langchain/openai": "^0.6.11",
+    "fast-xml-parser": "^5.2.5",
+    "openai": "^5.22.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2"
+  }
+}
