@@ -5,9 +5,9 @@ const client = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
 });
 
-export async function useMercury(userInput: string) {
+export async function useOpenAIOss20b(userInput: string) {
   const res = await client.chat.completions.create({
-    model: "inception/mercury",
+    model: "openai/gpt-oss-20b",
     messages: [
       {
         role: "system",
@@ -66,25 +66,7 @@ Output: single task
         content: userInput,
       },
     ],
+    reasoning_effort: undefined,
   });
   return res.choices[0].message.content as string;
 }
-
-const routeRequest = async (
-  userInput: string,
-  routingFunctinos: Record<string, () => Promise<any>>,
-) => {
-  const a = await useMercury(userInput);
-  const routingFunc = routingFunctinos[a];
-  if (!routingFunc) return await routingFunctinos["fallback"]();
-  return await routingFunc();
-};
-
-const result = routeRequest("User input", {
-  "single task": async () => {
-    console.log("Fast model called");
-  },
-  "multi step task": async () => {
-    console.log("multi step task model called");
-  },
-});

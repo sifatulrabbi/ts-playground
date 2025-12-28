@@ -1,3 +1,6 @@
+import { useMercury } from "./mercury";
+import { useMistral } from "./mistral";
+
 export const testCases = [
   {
     input:
@@ -52,3 +55,20 @@ export const testCases = [
     expected: "single task",
   },
 ];
+
+async function testRunner(useModel: (input: string) => Promise<string>) {
+  for (const testCase of testCases) {
+    const start = Date.now();
+    const res = await useModel(testCase.input);
+    console.log("I:", testCase.input);
+    console.log("O:", res, "    ", res === testCase.expected);
+    console.log(((Date.now() - start) / 1000).toFixed(2), "seconds");
+    console.log();
+  }
+}
+
+console.log(">>> using mercury\n");
+await testRunner(useMercury);
+
+console.log(">>> using mistral-3b\n");
+await testRunner(useMistral);

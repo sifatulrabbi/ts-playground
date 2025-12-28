@@ -5,9 +5,10 @@ const client = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
 });
 
-export async function useMercury(userInput: string) {
+export async function useMistral(userInput: string) {
   const res = await client.chat.completions.create({
-    model: "inception/mercury",
+    // model: "mistralai/ministral-8b",
+    model: "mistralai/ministral-3b",
     messages: [
       {
         role: "system",
@@ -69,22 +70,3 @@ Output: single task
   });
   return res.choices[0].message.content as string;
 }
-
-const routeRequest = async (
-  userInput: string,
-  routingFunctinos: Record<string, () => Promise<any>>,
-) => {
-  const a = await useMercury(userInput);
-  const routingFunc = routingFunctinos[a];
-  if (!routingFunc) return await routingFunctinos["fallback"]();
-  return await routingFunc();
-};
-
-const result = routeRequest("User input", {
-  "single task": async () => {
-    console.log("Fast model called");
-  },
-  "multi step task": async () => {
-    console.log("multi step task model called");
-  },
-});
