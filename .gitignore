@@ -109,3 +109,6 @@ ehthumbs.db
 # Test output
 test-results/
 playwright-report/
+
+# Monorepo - archived experiments (not part of workspace)
+archived/

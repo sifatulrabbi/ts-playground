@@ -1,0 +1,4 @@
+- Never perform sensitive bash commands.
+- Never perform `sudo` commands.
+- Add proper comments in the functions/classes/modules also treat comments as documentation for complex loops and data structure.
+- That said do not spam the codebase with comments all over the place.
