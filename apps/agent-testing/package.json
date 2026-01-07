@@ -1,0 +1,28 @@
+{
+  "name": "@apps/agent-testing",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun"
+  },
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "@langchain/core": "^1.1.9",
+    "@langchain/langgraph": "^1.0.7",
+    "@langchain/openai": "^1.2.1",
+    "@tavily/core": "^0.6.4",
+    "dotenv": "^17.2.3",
+    "ink": "^6.6.0",
+    "ink-text-input": "^6.0.0",
+    "mathjs": "^15.1.0",
+    "react": "^19.2.3",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.5",
+    "@types/react": "^19.2.7"
+  }
+}

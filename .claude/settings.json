@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:brainstorming)",
+      "Skill(superpowers:executing-plans)"
+    ]
+  },
+  "sandbox": {
+    "enabled": false
+  }
+}
